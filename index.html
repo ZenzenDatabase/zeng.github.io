@@ -11,6 +11,25 @@
         .avatar { width: 150px; border-radius: 50%; }
         .container { max-width: 800px; margin: auto; padding: 20px; }
         .pub-list { text-align: left; list-style-type: decimal; padding-left: 20px; }
+        .hr-container {
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .hr-container hr {
+            border: none;
+            border-top: 3px solid green;
+            width: 120%;
+            margin: 0;
+        }
+        .hr-container .title {
+            position: absolute;
+            top: -20px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -18,7 +37,13 @@
         <div class="text-center">
             <img src="images/donghuo.png" alt="Donghuo Zeng" class="avatar" width="300" height="180">
             <h1>Donghuo Zeng</h1>
-            <hr width="120%" color="green" size="50px" />
+            
+            <!-- Custom HR with title -->
+            <div class="hr-container">
+                <hr />
+                <div class="title">Professional Summary</div>
+            </div>
+
             <h4>AI Researcher at KDDI Research, Inc., Japan</h4>
             <p>Specializing in multimedia learning, persuasion systems, and causal inference.</p>
         </div>
